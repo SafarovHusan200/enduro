@@ -1463,6 +1463,377 @@ li {
   padding: 9px 60px 13px 60px;
 }
 
+/* our client => Наши клиенты */
+.our_client {
+  width: 100%;
+  background-color: #000;
+
+  padding: 168px 0 120px 0;
+}
+
+.our_client .container {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.our_client .title {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 102px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 110%; /* 112.2px */
+
+  margin-bottom: 40px;
+}
+
+.our_client .swiper-slide {
+  min-height: 500px;
+  position: relative;
+  z-index: 1;
+
+  background-image: url("../images/our__client__siwiper__border.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.our_client .swiper-slide .row {
+  display: flex;
+  align-items: flex-end;
+  gap: 37px;
+
+  margin-bottom: 15px;
+}
+
+.our_client .swiper-slide .row h4 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 33.6px */
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.our_client .swiper-slide p {
+  color: #fff;
+
+  /* p3 */
+  font-family: "Roboto";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 28.8px */
+
+  padding: 30px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+
+  padding-bottom: 50px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: var(--swiper-navigation-top-offset, 100%);
+  top: auto;
+  bottom: -2px;
+}
+
+.swiper-button-next {
+  right: calc(50% - 150px);
+}
+
+.swiper-button-prev {
+  left: calc(50% - 150px);
+}
+
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background-color: #c1ffc9;
+  border-radius: 50%;
+  opacity: 2;
+}
+.swiper-pagination-bullet-active {
+  width: 20px;
+  height: 20px;
+  background-color: #39ff14;
+}
+
+.swiper__btns {
+  width: 100%;
+  justify-content: center;
+  gap: 190px;
+}
+
+.swiper-button-prev img {
+  transform: rotate(180deg);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: "";
+}
+
+/* Faq style */
+.faq {
+  width: 100%;
+  background-color: #000;
+
+  padding-bottom: 60px;
+}
+
+.faq .container {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.faq .section__title .section__title__child__1 {
+  padding-left: 141px;
+}
+
+.faq .section__title__child__2 {
+  padding-left: 472px;
+  color: #39ff14;
+}
+
+.accordion {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+
+  /* p2 */
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 33.6px */
+
+  padding: 30px;
+  margin-bottom: 10px;
+
+  text-align: left;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.active,
+.accordion:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.accordion__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion .plus {
+  display: block;
+}
+.accordion .minus {
+  display: none;
+}
+.accordion.active .plus {
+  display: none;
+}
+.accordion.active .minus {
+  display: block;
+}
+
+.panel {
+  padding: 0 18px;
+  height: 0;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+
+  transition: all 0.4s;
+
+  color: #fff;
+  margin-left: 15px;
+  padding: 0 30px;
+
+  /* p3 */
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 28.8px */
+}
+.panel.show {
+  overflow: visible;
+  height: auto;
+  padding: 30px;
+  margin-bottom: 15px;
+}
+
+/* Trening section => Записаться на тренировку  */
+.trening {
+  width: 100%;
+
+  background: url("../images/trening__bg.png") #000 50% / cover no-repeat;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  padding-bottom: 57px;
+}
+
+.trening .trening__container {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 110px 70px;
+
+  border-radius: 15px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url("../images/trening__container__bg.png") lightgray 50% / cover no-repeat;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.trening .section__title {
+  text-align: left;
+}
+.trening .section__title .section__title__child__1 {
+  color: #39ff14;
+
+  padding-left: 141px;
+}
+
+.trening .descr {
+  color: #fff;
+
+  /* p1 Uppercase */
+  font-family: "Roboto", sans-serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+
+  margin: 30px 0;
+}
+
+.trening .btns {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.trening .btns .btn {
+  display: flex;
+  padding: 16px 60px 20px 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  background: #ffa500;
+
+  color: #000;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 33.6px */
+}
+
+.trening .btns .btn:nth-child(2) {
+  background: #39ff14;
+  padding: 9px 60px 13px 60px;
+}
+.trening .btns .btn:nth-child(3) {
+  background: #39ff14;
+  padding: 9px 60px 13px 60px;
+}
+
+/* Contact and map */
+.contact__container {
+  gap: 20px;
+  align-items: flex-start;
+
+  margin-top: 120px;
+
+  margin-bottom: 90px;
+}
+
+.contact__container .left__block {
+  display: flex;
+  flex-direction: column;
+
+  gap: 34px;
+}
+
+.contact__container .left__block h3 {
+  color: #fff;
+  text-align: left;
+
+  /* H3 Uppercase */
+  font-family: "Montserrat", sans-serif;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.contact__container .left__block a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  color: #fff;
+
+  /* p1 */
+  font-family: Roboto;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.contact__container .left__block .location {
+  align-items: flex-start;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+}
+.footer p {
+  color: rgba(255, 255, 255, 0.6);
+
+  /* p4 */
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  text-align: center;
+}
+
 /* Media query max-width: 1500px */
 @media screen and (max-width: 1500px) {
   .hero h2 {
