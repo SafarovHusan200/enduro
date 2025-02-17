@@ -2649,6 +2649,8 @@ li {
 
   .contact__container .left__block h3 {
     font-size: 46px;
+
+    font-weight: 900;
   }
 
   .contact__container .left__block a {
