@@ -14,240 +14,966 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container">
-        <p class="extreme">Fun Extreme</p>
+    <div class="wrapper">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <p class="extreme">Fun Extreme</p>
 
-        <div class="hero__titles">
-          <h2>САМЫЙ</h2>
-          <h2>БОЛЬШОЙ</h2>
-          <h2>ПРОКАТ ЭНДУРО</h2>
+          <div class="hero__titles">
+            <h2>САМЫЙ</h2>
+            <h2>БОЛЬШОЙ</h2>
+            <h2>ПРОКАТ ЭНДУРО</h2>
+          </div>
+
+          <div class="hero__actions">
+            <p>Испытай адреналин сейчас!</p>
+            <div class="btns">
+              <button class="btn" id="open__modal">Записаться на прокат</button>
+              <button class="btn">Узнать больше</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <div class="modal__parent" id="modal__parent">
+        <div class="modal" id="modak">
+          <button class="close__btn" id="close__modal">
+            <img src="./assets/icons/close__icon.svg" alt="icon" />
+          </button>
+          <h2>Записаться на тренировку</h2>
+          <form>
+            <input type="text" placeholder="Имя" name="name" />
+            <input type="tel" placeholder="Телефон" name="phone" />
+            <label for="agree__offer" class="agree__offer">
+              <div class="agree__offer__checked">
+                <input class="correct" type="checkbox" id="agree__offer" />
+                <span class="custom-checkbox"></span>
+              </div>
+              <span>
+                Cогласен(а) с <a href="#">политикой конфиденциальности</a>
+                и принимаю условия
+                <a href="#">публичной оферты</a>
+              </span>
+            </label>
+
+            <button class="btn">Записаться</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- offer -->
+      <section class="offer">
+        <div class="container">
+          <div class="block block__1">
+            <div class="box">
+              <p>
+                Испытайте острые ощущения от езды по пересеченной местности
+                на мощном мотоцикле эндуро. Наш парк первоклассных мотоциклов
+                эндуро идеально подходит для любителей приключений, которые ищут
+                захватывающие впечатления от езды по бездорожью.
+              </p>
+            </div>
+          </div>
+          <div class="block block__2">
+            <div class="box">
+              <h3>#1</h3>
+              <p>Более 100 позиций новой техники</p>
+            </div>
+          </div>
+          <div class="block block__3">
+            <div class="box">
+              <h3>#2</h3>
+              <p>Инновационный центр площадью >1000м2</p>
+            </div>
+            <div class="box">
+              <h3>#3</h3>
+              <p>Собственные трассы, низкие цены на прокат</p>
+            </div>
+          </div>
+          <div class="block block__4">
+            <div class="box">
+              <h3>#4</h3>
+              <p>Инновационный центр площадью >1000м2</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- rental => Мото-и квадро- туры, прокат снегоходов -->
+      <section class="rental">
+        <div class="container">
+          <h2 class="section__title">
+            <span>Мото-</span> <br />
+            и квадро- туры,
+            <br />
+            <span class="section__title__child__2">прокат снегоходов</span>
+          </h2>
+
+          <div class="cards">
+            <div class="card">
+              <img src="./assets/images/rental__card__1.png" alt="" />
+              <div class="content">
+                <h4 class="card__title">Мототуры</h4>
+                <div class="date__price">
+                  <span>2 часа</span>
+                  <b class="price">4990 ₽</b>
+                </div>
+
+                <p class="description">
+                  прогулка+фотосессия входят в стоимость
+                </p>
+                <button class="btn">Подробнее</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./assets/images/rental__card__2.png" alt="" />
+              <div class="content">
+                <h4 class="card__title">Квадротуры</h4>
+                <div class="date__price">
+                  <span>2 часа</span>
+                  <b class="price">7990 ₽</b>
+                </div>
+
+                <p class="description">
+                  прогулка+фотосессия входят в стоимость
+                </p>
+                <button class="btn">Подробнее</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./assets/images/rental__card__3.png" alt="" />
+              <div class="content">
+                <h4 class="card__title">Прокат снегоходов</h4>
+                <div class="date__price">
+                  <span>2 часа</span>
+                  <b class="price">7990 ₽</b>
+                </div>
+
+                <p class="description">
+                  прогулка+фотосессия входят в стоимость
+                </p>
+                <button class="btn">Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- rental => Мото-и квадро- туры, прокат снегоходов -->
+      <section class="rental instagram__section">
+        <div class="container">
+          <h2 class="section__title">
+            Мото- и квадро- туры
+            <span>с пикниками на природе</span> <br />
+            <span>и instagram фотосессией</span>
+          </h2>
+
+          <div class="cards">
+            <div class="card">
+              <img src="./assets/images/instagram__card__1.png" alt="" />
+              <div class="content">
+                <h4 class="card__title">Эндуро</h4>
+                <div class="date__price">
+                  <span>2 часа</span>
+                  <b class="price">8990 ₽</b>
+                </div>
+
+                <button class="btn">Подробнее</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./assets/images/instagram__card__2.png" alt="" />
+              <div class="content">
+                <h4 class="card__title">Снегоходы</h4>
+                <div class="date__price">
+                  <span>2 часа</span>
+                  <b class="price">17 990 ₽</b>
+                </div>
+
+                <button class="btn">Подробнее</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./assets/images/instagram__card__3.png" alt="" />
+              <div class="content">
+                <h4 class="card__title">Квадроциклы</h4>
+                <div class="date__price">
+                  <span>2 часа</span>
+                  <b class="price">13 990 ₽</b>
+                </div>
+
+                <button class="btn">Подробнее</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="included__price">
+            <h3>В стоимость включено</h3>
+
+            <div class="boxes">
+              <div class="box">
+                Полный комплект экипировки, подходящей для выбранного вида
+                техники.
+              </div>
+              <div class="box">
+                Профессиональный инструктаж перед началом прогулки.
+              </div>
+              <div class="box">Прогулка с гидом по живописным маршрутам.</div>
+              <div class="box">
+                Доступ к игровой зоне (PlayStation, настольные игры).
+              </div>
+              <div class="box">
+                Услуги фотографа: лучшие моменты прогулки будут запечатлены.
+              </div>
+              <div class="box">
+                Абсолютно новая, профессионально подготовленная техника.
+              </div>
+              <div class="box">
+                Бесплатный чай, кофе, закуски после прогулки.
+              </div>
+              <div class="box">
+                Детская комната: бесплатная возможность оставить детей под
+                присмотром няни
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- sign-up => Записаться на тренировку -->
+      <section class="signUp">
+        <div class="container">
+          <div class="block">
+            <h2 class="section__title">
+              Записаться <br />
+              на тренировку
+            </h2>
+            <p class="description">Действует бонусная система!</p>
+
+            <div class="btns">
+              <button class="btn online">Записаться онлайн</button>
+              <button class="btn telegram">
+                Записаться
+                <img src="./assets/icons/telegram__icon.svg" alt="icon" />
+              </button>
+              <button class="btn telegram">
+                Записаться
+                <img src="./assets/icons/phone__icon.svg" alt="icon" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- client => Новым клиентам — подарок -->
+      <section class="client">
+        <div class="container">
+          <div class="block">
+            <h2 class="section__title">
+              Новым клиентам —
+              <div class="section__title__child__2">подарок</div>
+            </h2>
+
+            <div class="content">
+              <p class="description">
+                Сертификат на 1000 ₽ за подписку <br />
+                на наш канал в Телеграм
+              </p>
+
+              <button class="btn">Получить подарок</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about section -->
+      <section class="about">
+        <div class="container">
+          <h2 class="section__title">О нас</h2>
+          <div class="block">
+            <div class="card">
+              <p class="description">
+                В Fun Extreme мы живем и дышим эндуро. Мы предлагаем широкий
+                выбор лучших мотоциклов эндуро, тщательно обслуживаемых
+                и готовых к преодолению самых сложных трасс. Если вы опытный
+                гонщик, ищущий очередную порцию адреналина, или новичок,
+                желающий познакомиться с миром бездорожья, у нас найдется
+                идеальный мотоцикл для вас.
+              </p>
+            </div>
+
+            <div class="slide slide__1">
+              <img src="./assets/images/about__slide__1.png" alt="img" />
+            </div>
+            <div class="slide slide__2">
+              <img src="./assets/images/about__slide__2.png" alt="img" />
+            </div>
+            <div class="slide slide__3">
+              <img src="./assets/images/about__slide__3.png" alt="img" />
+            </div>
+            <div class="slide slide__4">
+              <img src="./assets/images/about__slide__4.png" alt="img" />
+            </div>
+            <div class="slide slide__5">
+              <img src="./assets/images/about__slide__5.png" alt="img" />
+            </div>
+            <div class="slide slide__6">
+              <img src="./assets/images/about__slide__6.png" alt="img" />
+            </div>
+          </div>
+
+          <div class="about__video">
+            <button class="video__play">
+              <img src="./assets/icons/video__play.svg" alt="icon" />
+            </button>
+            <img src="./assets/images/video__bg.png" alt="" />
+          </div>
+
+          <div class="swiper clientSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/images/about__slide__1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/about__slide__2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/about__slide__3.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/about__slide__4.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/about__slide__5.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/about__slide__6.png" alt="" />
+              </div>
+            </div>
+
+            <div class="swiper-button-next">
+              <img src="./assets/icons/swiper__next.png" alt="img" />
+            </div>
+            <div class="swiper-button-prev">
+              <img src="./assets/icons/swiper__next.png" alt="img" />
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Funextreme section -->
+      <section class="funextreme">
+        <div class="container">
+          <h2 class="section__title">
+            Funextreme —
+            <br />
+            <span class="section__title__child__2"> новый уровень</span>
+            <br />
+            тренировок и отдыха <br />
+            <span class="section__title__child__4">для взрослых и детей</span>
+          </h2>
+
+          <div class="cards">
+            <div class="card card__1">
+              <h3>#1</h3>
+
+              <div class="content">
+                <h4>Свежая техника и экипировка</h4>
+                <p>Более 100 ТОПовых позиций техники</p>
+              </div>
+            </div>
+            <div class="card card__2">
+              <h3>#2</h3>
+
+              <div class="content">
+                <h4>Собственные трассы</h4>
+                <p>Всего 2км от МКАД</p>
+              </div>
+            </div>
+            <div class="card card__3">
+              <img src="./assets/images/funextrem__card__3.png" alt="" />
+            </div>
+            <div class="card card__4">
+              <img src="./assets/images/funextrem__card__4.png" alt="" />
+            </div>
+
+            <div class="card card__2">
+              <h3>#3</h3>
+
+              <div class="content">
+                <h4>Игровая зона для детей</h4>
+                <p>Playstation, для малышей — услуги няни</p>
+              </div>
+            </div>
+
+            <div class="card card__6">
+              <h3>#3</h3>
+
+              <div class="content">
+                <h4>Инновационный центр развлечений</h4>
+                <p>Обеденные зоны, комнаты отдыха</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="corporate">
+            <div class="corporate__title">
+              Для
+              <span
+                >корпоративов <br />
+                и больших компаний</span
+              >
+              банкетные залы (от 10 до 30 человек)
+            </div>
+            <div class="box">
+              <div class="box__row">
+                <img
+                  src="./assets/icons/corporate__box__icon__1.svg"
+                  alt="icon"
+                />
+              </div>
+
+              <div class="box__row">
+                <p>Бесплатные угощения для всех гостей</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box__row">
+                <p>
+                  Для отдыха компанией, корпоративных мероприятий, для семьи и
+                  друзей.
+                </p>
+              </div>
+
+              <div class="box__row">
+                <div class="box__row__child">
+                  <span>Прекрасный вариант отдыха для всей семьи!</span>
+
+                  <span
+                    >На время катания Вы можете оставить детей под присмотром
+                    няни.</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box__row">
+                <img
+                  src="./assets/icons/corporate__box__icon__2.svg"
+                  alt="icon"
+                />
+              </div>
+
+              <div class="box__row">
+                <p>Отметить День рождения (или другое событие)</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box__row">
+                <img
+                  src="./assets/icons/corporate__box__icon__3.svg"
+                  alt="icon"
+                />
+              </div>
+
+              <div class="box__row">
+                <p>Новая сауна с парной</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="funextreme__galery">
+            <div class="funextreme__galery__box funextreme__galery__box__1">
+              <img src="./assets/images/funextreme__galery__1.png" alt="icon" />
+            </div>
+            <div class="funextreme__galery__box funextreme__galery__box__2">
+              <img src="./assets/images/funextreme__galery__2.png" alt="icon" />
+            </div>
+            <div class="funextreme__galery__box funextreme__galery__box__3">
+              <img src="./assets/images/funextreme__galery__3.png" alt="icon" />
+            </div>
+            <div class="funextreme__galery__box funextreme__galery__box__4">
+              <img src="./assets/images/funextreme__galery__4.png" alt="icon" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Banquet => Аренда банкетных залов -->
+      <section class="banquet">
+        <div class="container">
+          <h3 class="banquet__title">
+            Аренда <br />
+            банкетных <br />
+            залов
+          </h3>
+          <div class="cards">
+            <div class="card">
+              <img src="./assets/images/banquet__card__1.png" alt="" />
+              <div class="content">
+                <h4 class="card__title">Малый зал</h4>
+                <div class="date__price">
+                  <span>1 часа</span>
+                  <b class="price">3000 ₽</b>
+                </div>
+                <div class="date__price">
+                  <span>3 часа</span>
+                  <b class="price">8000 ₽</b>
+                </div>
+
+                <p class="description">до 10 человек</p>
+                <button class="btn">Подробнее</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./assets/images/banquet__card__2.png" alt="" />
+              <div class="content">
+                <h4 class="card__title">Средний зал</h4>
+                <div class="date__price">
+                  <span>1 часа</span>
+                  <b class="price">5000 ₽</b>
+                </div>
+                <div class="date__price">
+                  <span>3 часа</span>
+                  <b class="price">13 000 ₽</b>
+                </div>
+
+                <p class="description">до 10 человек</p>
+                <button class="btn">Подробнее</button>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="hero__actions">
-          <p>Испытай адреналин сейчас!</p>
+        <div class="container banquet__container">
+          <h2 class="title">
+            В стоимость аренды <br />
+            включено
+          </h2>
+          <div class="block">
+            <div class="box">
+              <p>
+                Доступ к PlayStation, настольным играм и другим развлечениям.
+              </p>
+            </div>
+            <div class="box">
+              <p>Бесплатный чай, кофе и закуски для всех гостей.</p>
+            </div>
+            <div class="box">
+              <p>
+                Современная, уютная обстановка, подходящая для встреч,
+                праздников и отдыха.
+              </p>
+            </div>
+            <div class="box">
+              <p>
+                Детская комната: бесплатный доступ для детей участников
+                мероприятий.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact section => СВЯЗАТЬСЯ С НАМИ -->
+      <section class="contact">
+        <div class="container">
+          <h2 class="tittle">СВЯЗАТЬСЯ С НАМИ</h2>
+          <div class="connect">
+            <p>Наши соц. сети</p>
+
+            <div class="links">
+              <a href="#">
+                <img src="./assets/icons/vk.svg" alt="" />
+              </a>
+              <a href="#">
+                <img src="./assets/icons/instagram.svg" alt="" />
+              </a>
+              <a href="#">
+                <img src="./assets/icons/youtube.svg" alt="" />
+              </a>
+            </div>
+          </div>
+
           <div class="btns">
-            <button class="btn" id="open__modal">Записаться на прокат</button>
-            <button class="btn">Узнать больше</button>
+            <button class="btn online">Позвонить нам</button>
+            <button class="btn telegram">
+              Написать
+              <img src="./assets/icons/telegram__icon.svg" alt="icon" />
+            </button>
+            <button class="btn telegram">
+              Написать
+              <img src="./assets/icons/phone__icon.svg" alt="icon" />
+            </button>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Modal -->
-    <div class="modal__parent" id="modal__parent">
-      <div class="modal" id="modak">
-        <button class="close__btn" id="close__modal">
-          <img src="./assets/icons/close__icon.svg" alt="icon" />
-        </button>
-        <h2>Записаться на тренировку</h2>
-        <form>
-          <input type="text" placeholder="Имя" name="name" />
-          <input type="tel" placeholder="Телефон" name="phone" />
-          <label for="agree__offer" class="agree__offer">
-            <div class="agree__offer__checked">
-              <input class="correct" type="checkbox" id="agree__offer" />
-              <span class="custom-checkbox"></span>
-            </div>
-            <span>
-              Cогласен(а) с <a href="#">политикой конфиденциальности</a>
-              и принимаю условия
-              <a href="#">публичной оферты</a>
-            </span>
-          </label>
+      <!-- our client => Наши клиенты -->
+      <section class="our_client">
+        <div class="container">
+          <h2 class="title">Наши клиенты</h2>
 
-          <button class="btn">Записаться</button>
-        </form>
-      </div>
-    </div>
+          <div class="swiper clientSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="row">
+                  <img
+                    class="user"
+                    src="./assets/images/our__client_user1.png"
+                    alt=""
+                  />
+                  <div>
+                    <h4>Вячеслав</h4>
+                    <div class="stars">
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
 
-    <!-- offer -->
-    <section class="offer">
-      <div class="container">
-        <div class="block block__1">
-          <div class="box">
-            <p>
-              Испытайте острые ощущения от езды по пересеченной местности
-              на мощном мотоцикле эндуро. Наш парк первоклассных мотоциклов
-              эндуро идеально подходит для любителей приключений, которые ищут
-              захватывающие впечатления от езды по бездорожью.
-            </p>
-          </div>
-        </div>
-        <div class="block block__2">
-          <div class="box">
-            <h3>#1</h3>
-            <p>Более 100 позиций новой техники</p>
-          </div>
-        </div>
-        <div class="block block__3">
-          <div class="box">
-            <h3>#2</h3>
-            <p>Инновационный центр площадью >1000м2</p>
-          </div>
-          <div class="box">
-            <h3>#3</h3>
-            <p>Собственные трассы, низкие цены на прокат</p>
-          </div>
-        </div>
-        <div class="block block__4">
-          <div class="box">
-            <h3>#4</h3>
-            <p>Инновационный центр площадью >1000м2</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- rental => Мото-и квадро- туры, прокат снегоходов -->
-    <section class="rental">
-      <div class="container">
-        <h2 class="section__title">
-          <span>Мото-</span> <br />
-          и квадро- туры,
-          <br />
-          <span class="section__title__child__2">прокат снегоходов</span>
-        </h2>
-
-        <div class="cards">
-          <!-- card 1 -->
-          <div class="card">
-            <img src="./assets/images/rental__card__1.png" alt="" />
-            <div class="content">
-              <h4 class="card__title">Мототуры</h4>
-              <div class="date__price">
-                <span>2 часа</span>
-                <b class="price">4990 ₽</b>
+                <div>
+                  <p>
+                    Недавно посетил клуб по прокату эндуро, и это было
+                    потрясающе! Персонал был очень дружелюбным и
+                    профессиональным. Они помогли мне выбрать идеальный мотоцикл
+                    для моего уровня подготовки. Трассы были захватывающими, а
+                    природа вокруг просто великолепна. Обязательно вернусь
+                    снова!
+                  </p>
+                </div>
               </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <img
+                    class="user"
+                    src="./assets/images/our__client_user2.png"
+                    alt=""
+                  />
+                  <div>
+                    <h4>Владислав</h4>
+                    <div class="stars">
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
 
-              <p class="description">прогулка+фотосессия входят в стоимость</p>
-              <button class="btn">Подробнее</button>
-            </div>
-          </div>
-          <!-- card 2 -->
-          <div class="card">
-            <img src="./assets/images/rental__card__2.png" alt="" />
-            <div class="content">
-              <h4 class="card__title">Квадротуры</h4>
-              <div class="date__price">
-                <span>2 часа</span>
-                <b class="price">7990 ₽</b>
+                <div>
+                  <p>
+                    Я никогда ранее не катался на эндуро, но команда клуба
+                    сделала все, чтобы я чувствовал себя комфортно. Инструктор
+                    дал отличные советы и показал, как правильно управлять
+                    мотоциклом. Это был незабываемый опыт! Рекомендую всем, кто
+                    хочет попробовать что-то новое.
+                  </p>
+                </div>
               </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <img
+                    class="user"
+                    src="./assets/images/our__client_user3.png"
+                    alt=""
+                  />
+                  <div>
+                    <h4>Святослав</h4>
+                    <div class="stars">
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
 
-              <p class="description">прогулка+фотосессия входят в стоимость</p>
-              <button class="btn">Подробнее</button>
-            </div>
-          </div>
-          <!-- card 2 -->
-          <div class="card">
-            <img src="./assets/images/rental__card__3.png" alt="" />
-            <div class="content">
-              <h4 class="card__title">Прокат снегоходов</h4>
-              <div class="date__price">
-                <span>2 часа</span>
-                <b class="price">7990 ₽</b>
+                <div>
+                  <p>
+                    Прокат эндуро — это настоящая находка! Я опытный райдер, и
+                    мне понравилось, как клуб организует все — от аренды до
+                    инструктажей. Трассы были хорошо подготовлены, и я смог
+                    испытать свои навыки в различных условиях. Рекомендую всем,
+                    кто ищет качественный прокат мотоциклов!
+                  </p>
+                </div>
               </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <img
+                    class="user"
+                    src="./assets/images/our__client_user1.png"
+                    alt=""
+                  />
+                  <div>
+                    <h4>Вячеслав</h4>
+                    <div class="stars">
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
 
-              <p class="description">прогулка+фотосессия входят в стоимость</p>
-              <button class="btn">Подробнее</button>
+                <div>
+                  <p>
+                    Недавно посетил клуб по прокату эндуро, и это было
+                    потрясающе! Персонал был очень дружелюбным и
+                    профессиональным. Они помогли мне выбрать идеальный мотоцикл
+                    для моего уровня подготовки. Трассы были захватывающими, а
+                    природа вокруг просто великолепна. Обязательно вернусь
+                    снова!
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <img
+                    class="user"
+                    src="./assets/images/our__client_user3.png"
+                    alt=""
+                  />
+                  <div>
+                    <h4>Святослав</h4>
+                    <div class="stars">
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <p>
+                    Прокат эндуро — это настоящая находка! Я опытный райдер, и
+                    мне понравилось, как клуб организует все — от аренды до
+                    инструктажей. Трассы были хорошо подготовлены, и я смог
+                    испытать свои навыки в различных условиях. Рекомендую всем,
+                    кто ищет качественный прокат мотоциклов!
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <img
+                    class="user"
+                    src="./assets/images/our__client_user1.png"
+                    alt=""
+                  />
+                  <div>
+                    <h4>Вячеслав</h4>
+                    <div class="stars">
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                      <button>
+                        <img src="./assets/icons/star.svg" alt="icon" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <p>
+                    Недавно посетил клуб по прокату эндуро, и это было
+                    потрясающе! Персонал был очень дружелюбным и
+                    профессиональным. Они помогли мне выбрать идеальный мотоцикл
+                    для моего уровня подготовки. Трассы были захватывающими, а
+                    природа вокруг просто великолепна. Обязательно вернусь
+                    снова!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-next">
+              <img src="./assets/icons/swiper__next.png" alt="img" />
+            </div>
+            <div class="swiper-button-prev">
+              <img src="./assets/icons/swiper__next.png" alt="img" />
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Faq section => Отвечаем на популярные вопросы -->
+      <section class="faq">
+        <div class="container">
+          <h2 class="section__title">
+            <span class="section__title__child__1">Отвечаем </span><br />
+            на популярные
+            <br />
+            <span class="section__title__child__2">вопросы</span>
+          </h2>
+
+          <div class="accordions">
+            <button class="accordion">
+              <span>Нужны ли водительские права для вождения эндуро?</span>
+
+              <div class="accordion__icon">
+                <img src="./assets/icons/plus.svg" alt="" class="plus" />
+                <img src="./assets/icons/minus.svg" alt="" class="minus" />
+              </div>
+            </button>
+            <div class="panel">
+              <p>
+                В Fun Extreme мы живем и дышим эндуро. Мы предлагаем широкий
+                выбор лучших мотоциклов эндуро, тщательно обслуживаемых
+                и готовых к преодолению самых сложных трасс. Если вы опытный
+                гонщик, ищущий очередную порцию адреналина, или новичок,
+                желающий познакомиться с миром бездорожья, у нас найдется
+                идеальный мотоцикл для вас.
+              </p>
+            </div>
+
+            <button class="accordion">
+              Есть ли парковка на территории?
+
+              <div class="accordion__icon">
+                <img src="./assets/icons/plus.svg" alt="" class="plus" />
+                <img src="./assets/icons/minus.svg" alt="" class="minus" />
+              </div>
+            </button>
+            <div class="panel">
+              <p>
+                В Fun Extreme мы живем и дышим эндуро. Мы предлагаем широкий
+                выбор лучших мотоциклов эндуро, тщательно обслуживаемых
+                и готовых к преодолению самых сложных трасс. Если вы опытный
+                гонщик, ищущий очередную порцию адреналина, или новичок,
+                желающий познакомиться с миром бездорожья, у нас найдется
+                идеальный мотоцикл для вас.
+              </p>
+            </div>
+
+            <button class="accordion">
+              <span>Как проходит заезд?</span>
+
+              <div class="accordion__icon">
+                <img src="./assets/icons/plus.svg" alt="" class="plus" />
+                <img src="./assets/icons/minus.svg" alt="" class="minus" />
+              </div>
+            </button>
+            <div class="panel">
+              <p>
+                В Fun Extreme мы живем и дышим эндуро. Мы предлагаем широкий
+                выбор лучших мотоциклов эндуро, тщательно обслуживаемых
+                и готовых к преодолению самых сложных трасс. Если вы опытный
+                гонщик, ищущий очередную порцию адреналина, или новичок,
+                желающий познакомиться с миром бездорожья, у нас найдется
+                идеальный мотоцикл для вас.
+              </p>
+            </div>
+            <button class="accordion">
+              <span>Сколько времени занимает обучение и инструктаж?</span>
+
+              <div class="accordion__icon">
+                <img src="./assets/icons/plus.svg" alt="" class="plus" />
+                <img src="./assets/icons/minus.svg" alt="" class="minus" />
+              </div>
+            </button>
+            <div class="panel">
+              <p>
+                В Fun Extreme мы живем и дышим эндуро. Мы предлагаем широкий
+                выбор лучших мотоциклов эндуро, тщательно обслуживаемых
+                и готовых к преодолению самых сложных трасс. Если вы опытный
+                гонщик, ищущий очередную порцию адреналина, или новичок,
+                желающий познакомиться с миром бездорожья, у нас найдется
+                идеальный мотоцикл для вас.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- rental => Мото-и квадро- туры, прокат снегоходов -->
-    <section class="rental instagram__section">
-      <div class="container">
-        <h2 class="section__title">
-          Мото- и квадро- туры
-          <span>с пикниками на природе</span> <br />
-          <span>и instagram фотосессией</span>
-        </h2>
-
-        <div class="cards">
-          <!-- card 1 -->
-          <div class="card">
-            <img src="./assets/images/instagram__card__1.png" alt="" />
-            <div class="content">
-              <h4 class="card__title">Эндуро</h4>
-              <div class="date__price">
-                <span>2 часа</span>
-                <b class="price">8990 ₽</b>
-              </div>
-
-              <button class="btn">Подробнее</button>
-            </div>
-          </div>
-          <!-- card 2 -->
-          <div class="card">
-            <img src="./assets/images/instagram__card__2.png" alt="" />
-            <div class="content">
-              <h4 class="card__title">Снегоходы</h4>
-              <div class="date__price">
-                <span>2 часа</span>
-                <b class="price">17 990 ₽</b>
-              </div>
-
-              <button class="btn">Подробнее</button>
-            </div>
-          </div>
-          <!-- card 2 -->
-          <div class="card">
-            <img src="./assets/images/instagram__card__3.png" alt="" />
-            <div class="content">
-              <h4 class="card__title">Квадроциклы</h4>
-              <div class="date__price">
-                <span>2 часа</span>
-                <b class="price">13 990 ₽</b>
-              </div>
-
-              <button class="btn">Подробнее</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="included__price">
-          <h3>В стоимость включено</h3>
-
-          <div class="boxes">
-            <div class="box">
-              Полный комплект экипировки, подходящей для выбранного вида
-              техники.
-            </div>
-            <div class="box">
-              Профессиональный инструктаж перед началом прогулки.
-            </div>
-            <div class="box">Прогулка с гидом по живописным маршрутам.</div>
-            <div class="box">
-              Доступ к игровой зоне (PlayStation, настольные игры).
-            </div>
-            <div class="box">
-              Услуги фотографа: лучшие моменты прогулки будут запечатлены.
-            </div>
-            <div class="box">
-              Абсолютно новая, профессионально подготовленная техника.
-            </div>
-            <div class="box">Бесплатный чай, кофе, закуски после прогулки.</div>
-            <div class="box">
-              Детская комната: бесплатная возможность оставить детей под
-              присмотром няни
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- sign-up => Записаться на тренировку -->
-    <section class="signUp">
-      <div class="container">
-        <div class="block">
+      <!-- trening section => Записаться на тренировку -->
+      <section class="trening">
+        <div class="container trening__container">
           <h2 class="section__title">
             Записаться <br />
-            на тренировку
+            <span class="section__title__child__1">на тренировку</span>
           </h2>
-          <p class="description">Действует бонусная система!</p>
+
+          <p class="descr">Действует бонусная система!</p>
 
           <div class="btns">
             <button class="btn online">Записаться онлайн</button>
@@ -261,620 +987,36 @@
             </button>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- client => Новым клиентам — подарок -->
-    <section class="client">
-      <div class="container">
-        <div class="block">
-          <h2 class="section__title">
-            Новым клиентам —
-            <div class="section__title__child__2">подарок</div>
-          </h2>
-
-          <div class="content">
-            <p class="description">
-              Сертификат на 1000 ₽ за подписку <br />
-              на наш канал в Телеграм
-            </p>
-
-            <button class="btn">Получить подарок</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- about section -->
-    <section class="about">
-      <div class="container">
-        <h2 class="section__title">О нас</h2>
-        <div class="block">
-          <div class="card">
-            <p class="description">
-              В Fun Extreme мы живем и дышим эндуро. Мы предлагаем широкий выбор
-              лучших мотоциклов эндуро, тщательно обслуживаемых и готовых
-              к преодолению самых сложных трасс. Если вы опытный гонщик, ищущий
-              очередную порцию адреналина, или новичок, желающий познакомиться
-              с миром бездорожья, у нас найдется идеальный мотоцикл для вас.
-            </p>
-          </div>
-
-          <div class="slide slide__1">
-            <img src="./assets/images/about__slide__1.png" alt="img" />
-          </div>
-          <div class="slide slide__2">
-            <img src="./assets/images/about__slide__2.png" alt="img" />
-          </div>
-          <div class="slide slide__3">
-            <img src="./assets/images/about__slide__3.png" alt="img" />
-          </div>
-          <div class="slide slide__4">
-            <img src="./assets/images/about__slide__4.png" alt="img" />
-          </div>
-          <div class="slide slide__5">
-            <img src="./assets/images/about__slide__5.png" alt="img" />
-          </div>
-          <div class="slide slide__6">
-            <img src="./assets/images/about__slide__6.png" alt="img" />
-          </div>
-        </div>
-
-        <div class="about__video">
-          <button class="video__play">
-            <img src="./assets/icons/video__play.svg" alt="icon" />
-          </button>
-          <img src="./assets/images/video__bg.png" alt="" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Funextreme section -->
-    <section class="funextreme">
-      <div class="container">
-        <h2 class="section__title">
-          Funextreme —
-          <br />
-          <span class="section__title__child__2"> новый уровень</span>
-          <br />
-          тренировок и отдыха <br />
-          <span class="section__title__child__4">для взрослых и детей</span>
-        </h2>
-
-        <div class="cards">
-          <div class="card card__1">
-            <h3>#1</h3>
-
-            <div class="content">
-              <h4>Свежая техника и экипировка</h4>
-              <p>Более 100 ТОПовых позиций техники</p>
-            </div>
-          </div>
-          <div class="card card__2">
-            <h3>#2</h3>
-
-            <div class="content">
-              <h4>Собственные трассы</h4>
-              <p>Всего 2км от МКАД</p>
-            </div>
-          </div>
-          <div class="card card__3">
-            <img src="./assets/images/funextrem__card__3.png" alt="" />
-          </div>
-          <div class="card card__4">
-            <img src="./assets/images/funextrem__card__4.png" alt="" />
-          </div>
-
-          <div class="card card__2">
-            <h3>#3</h3>
-
-            <div class="content">
-              <h4>Игровая зона для детей</h4>
-              <p>Playstation, для малышей — услуги няни</p>
-            </div>
-          </div>
-
-          <div class="card card__6">
-            <h3>#3</h3>
-
-            <div class="content">
-              <h4>Инновационный центр развлечений</h4>
-              <p>Обеденные зоны, комнаты отдыха</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="corporate">
-          <div class="corporate__title">
-            Для
-            <span
-              >корпоративов <br />
-              и больших компаний</span
-            >
-            банкетные залы (от 10 до 30 человек)
-          </div>
-          <div class="box">
-            <div class="box__row">
-              <img
-                src="./assets/icons/corporate__box__icon__1.svg"
-                alt="icon"
-              />
-            </div>
-
-            <div class="box__row">
-              <p>Бесплатные угощения для всех гостей</p>
-            </div>
-          </div>
-          <div class="box">
-            <div class="box__row">
-              <p>
-                Для отдыха компанией, корпоративных мероприятий, для семьи и
-                друзей.
-              </p>
-            </div>
-
-            <div class="box__row">
-              <div class="box__row__child">
-                <span>Прекрасный вариант отдыха для всей семьи!</span>
-
-                <span
-                  >На время катания Вы можете оставить детей под присмотром
-                  няни.</span
-                >
-              </div>
-            </div>
-          </div>
-          <div class="box">
-            <div class="box__row">
-              <img
-                src="./assets/icons/corporate__box__icon__2.svg"
-                alt="icon"
-              />
-            </div>
-
-            <div class="box__row">
-              <p>Отметить День рождения (или другое событие)</p>
-            </div>
-          </div>
-          <div class="box">
-            <div class="box__row">
-              <img
-                src="./assets/icons/corporate__box__icon__3.svg"
-                alt="icon"
-              />
-            </div>
-
-            <div class="box__row">
-              <p>Новая сауна с парной</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="funextreme__galery">
-          <div class="funextreme__galery__box funextreme__galery__box__1">
-            <img src="./assets/images/funextreme__galery__1.png" alt="icon" />
-          </div>
-          <div class="funextreme__galery__box funextreme__galery__box__2">
-            <img src="./assets/images/funextreme__galery__2.png" alt="icon" />
-          </div>
-          <div class="funextreme__galery__box funextreme__galery__box__3">
-            <img src="./assets/images/funextreme__galery__3.png" alt="icon" />
-          </div>
-          <div class="funextreme__galery__box funextreme__galery__box__4">
-            <img src="./assets/images/funextreme__galery__4.png" alt="icon" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Banquet => Аренда банкетных залов -->
-    <section class="banquet">
-      <div class="container">
-        <h3 class="banquet__title">
-          Аренда <br />
-          банкетных <br />
-          залов
-        </h3>
-        <div class="cards">
-          <!-- card 1 -->
-          <div class="card">
-            <img src="./assets/images/banquet__card__1.png" alt="" />
-            <div class="content">
-              <h4 class="card__title">Малый зал</h4>
-              <div class="date__price">
-                <span>1 часа</span>
-                <b class="price">3000 ₽</b>
-              </div>
-              <div class="date__price">
-                <span>3 часа</span>
-                <b class="price">8000 ₽</b>
-              </div>
-
-              <p class="description">до 10 человек</p>
-              <button class="btn">Подробнее</button>
-            </div>
-          </div>
-          <!-- card 2 -->
-          <div class="card">
-            <img src="./assets/images/banquet__card__2.png" alt="" />
-            <div class="content">
-              <h4 class="card__title">Средний зал</h4>
-              <div class="date__price">
-                <span>1 часа</span>
-                <b class="price">5000 ₽</b>
-              </div>
-              <div class="date__price">
-                <span>3 часа</span>
-                <b class="price">13 000 ₽</b>
-              </div>
-
-              <p class="description">до 10 человек</p>
-              <button class="btn">Подробнее</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container banquet__container">
-        <h2 class="title">
-          В стоимость аренды <br />
-          включено
-        </h2>
-        <div class="block">
-          <div class="box">
-            <p>Доступ к PlayStation, настольным играм и другим развлечениям.</p>
-          </div>
-          <div class="box">
-            <p>Бесплатный чай, кофе и закуски для всех гостей.</p>
-          </div>
-          <div class="box">
-            <p>
-              Современная, уютная обстановка, подходящая для встреч, праздников
-              и отдыха.
-            </p>
-          </div>
-          <div class="box">
-            <p>
-              Детская комната: бесплатный доступ для детей участников
-              мероприятий.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact section => СВЯЗАТЬСЯ С НАМИ -->
-    <section class="contact">
-      <div class="container">
-        <h2 class="tittle">СВЯЗАТЬСЯ С НАМИ</h2>
-        <div class="connect">
-          <p>Наши соц. сети</p>
-
-          <div class="links">
-            <a href="#">
-              <img src="./assets/icons/vk.svg" alt="" />
+        <div class="container contact__container">
+          <div class="left__block">
+            <h3>Контакты</h3>
+            <a href="tel:+7 495 555 55 55">
+              <img src="./assets/icons/phone.svg" alt="icon" />
+              <u>+7 495 555 55 55</u>
             </a>
-            <a href="#">
-              <img src="./assets/icons/instagram.svg" alt="" />
-            </a>
-            <a href="#">
-              <img src="./assets/icons/youtube.svg" alt="" />
+
+            <a href="#" class="location">
+              <img src="./assets/icons/location.svg" alt="icon" />
+              <span>
+                Мотопарк <br />
+                «Вельяминово». <br />Московская обл., г. Истра, д. Вельяминово.
+              </span>
             </a>
           </div>
-        </div>
 
-        <div class="btns">
-          <button class="btn online">Позвонить нам</button>
-          <button class="btn telegram">
-            Написать
-            <img src="./assets/icons/telegram__icon.svg" alt="icon" />
-          </button>
-          <button class="btn telegram">
-            Написать
-            <img src="./assets/icons/phone__icon.svg" alt="icon" />
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- our client => Наши клиенты -->
-    <section class="our_client">
-      <div class="container">
-        <h2 class="title">Наши клиенты</h2>
-
-        <div class="swiper clientSwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="row">
-                <img src="./assets/images/our__client_user1.png" alt="" />
-                <div>
-                  <h4>Вячеслав</h4>
-                  <div class="stars">
-                    <button>
-                      <img src="./assets/icons/star.svg" alt="icon" />
-                    </button>
-                    <button>
-                      <img src="./assets/icons/star.svg" alt="icon" />
-                    </button>
-                    <button>
-                      <img src="./assets/icons/star.svg" alt="icon" />
-                    </button>
-                    <button>
-                      <img src="./assets/icons/star.svg" alt="icon" />
-                    </button>
-                    <button>
-                      <img src="./assets/icons/star.svg" alt="icon" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <p>
-                  Недавно посетил клуб по прокату эндуро, и это было потрясающе!
-                  Персонал был очень дружелюбным и профессиональным. Они помогли
-                  мне выбрать идеальный мотоцикл для моего уровня подготовки.
-                  Трассы были захватывающими, а природа вокруг просто
-                  великолепна. Обязательно вернусь снова!
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="row">
-                <img src="./assets/images/our__client_user2.png" alt="" />
-                <div>
-                  <h4>Владислав</h4>
-                  <div class="stars">
-                    <button>
-                      <img src="./assets/icons/star.svg" alt="icon" />
-                    </button>
-                    <button>
-                      <img src="./assets/icons/star.svg" alt="icon" />
-                    </button>
-                    <button>
-                      <img src="./assets/icons/star.svg" alt="icon" />
-                    </button>
-                    <button>
-                      <img src="./assets/icons/star.svg" alt="icon" />
-                    </button>
-                    <button>
-                      <img src="./assets/icons/star.svg" alt="icon" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <p>
-                  Я никогда ранее не катался на эндуро, но команда клуба сделала
-                  все, чтобы я чувствовал себя комфортно. Инструктор дал
-                  отличные советы и показал, как правильно управлять мотоциклом.
-                  Это был незабываемый опыт! Рекомендую всем, кто хочет
-                  попробовать что-то новое.
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="row">
-                <img src="./assets/images/our__client_user3.png" alt="" />
-                <div>
-                  <h4>Святослав</h4>
-                  <div class="stars">
-                    <button>
-                      <img src="./assets/icons/star.svg" alt="icon" />
-                    </button>
-                    <button>
-                      <img src="./assets/icons/star.svg" alt="icon" />
-                    </button>
-                    <button>
-                      <img src="./assets/icons/star.svg" alt="icon" />
-                    </button>
-                    <button>
-                      <img src="./assets/icons/star.svg" alt="icon" />
-                    </button>
-                    <button>
-                      <img src="./assets/icons/star.svg" alt="icon" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <p>
-                  Прокат эндуро — это настоящая находка! Я опытный райдер, и мне
-                  понравилось, как клуб организует все — от аренды до
-                  инструктажей. Трассы были хорошо подготовлены, и я смог
-                  испытать свои навыки в различных условиях. Рекомендую всем,
-                  кто ищет качественный прокат мотоциклов!
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="row">
-                <img src="./assets/images/our__client_user1.png" alt="" />
-                <div>
-                  <h4>Вячеслав</h4>
-                  <div class="stars">
-                    <button>
-                      <img src="./assets/icons/star.svg" alt="icon" />
-                    </button>
-                    <button>
-                      <img src="./assets/icons/star.svg" alt="icon" />
-                    </button>
-                    <button>
-                      <img src="./assets/icons/star.svg" alt="icon" />
-                    </button>
-                    <button>
-                      <img src="./assets/icons/star.svg" alt="icon" />
-                    </button>
-                    <button>
-                      <img src="./assets/icons/star.svg" alt="icon" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <p>
-                  Недавно посетил клуб по прокату эндуро, и это было потрясающе!
-                  Персонал был очень дружелюбным и профессиональным. Они помогли
-                  мне выбрать идеальный мотоцикл для моего уровня подготовки.
-                  Трассы были захватывающими, а природа вокруг просто
-                  великолепна. Обязательно вернусь снова!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-button-next">
-            <img src="./assets/icons/swiper__next.png" alt="img" />
-          </div>
-          <div class="swiper-button-prev">
-            <img src="./assets/icons/swiper__next.png" alt="img" />
-          </div>
-
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Faq section => Отвечаем на популярные вопросы -->
-    <section class="faq">
-      <div class="container">
-        <h2 class="section__title">
-          <span class="section__title__child__1">Отвечаем </span><br />
-          на популярные
-          <br />
-          <span class="section__title__child__2">вопросы</span>
-        </h2>
-
-        <div class="accordions">
-          <button class="accordion">
-            <span>Нужны ли водительские права для вождения эндуро?</span>
-
-            <div class="accordion__icon">
-              <img src="./assets/icons/plus.svg" alt="" class="plus" />
-              <img src="./assets/icons/minus.svg" alt="" class="minus" />
-            </div>
-          </button>
-          <div class="panel">
-            <p>
-              В Fun Extreme мы живем и дышим эндуро. Мы предлагаем широкий выбор
-              лучших мотоциклов эндуро, тщательно обслуживаемых и готовых
-              к преодолению самых сложных трасс. Если вы опытный гонщик, ищущий
-              очередную порцию адреналина, или новичок, желающий познакомиться
-              с миром бездорожья, у нас найдется идеальный мотоцикл для вас.
-            </p>
-          </div>
-
-          <button class="accordion">
-            Есть ли парковка на территории?
-
-            <div class="accordion__icon">
-              <img src="./assets/icons/plus.svg" alt="" class="plus" />
-              <img src="./assets/icons/minus.svg" alt="" class="minus" />
-            </div>
-          </button>
-          <div class="panel">
-            <p>
-              В Fun Extreme мы живем и дышим эндуро. Мы предлагаем широкий выбор
-              лучших мотоциклов эндуро, тщательно обслуживаемых и готовых
-              к преодолению самых сложных трасс. Если вы опытный гонщик, ищущий
-              очередную порцию адреналина, или новичок, желающий познакомиться
-              с миром бездорожья, у нас найдется идеальный мотоцикл для вас.
-            </p>
-          </div>
-
-          <button class="accordion">
-            <span>Как проходит заезд?</span>
-
-            <div class="accordion__icon">
-              <img src="./assets/icons/plus.svg" alt="" class="plus" />
-              <img src="./assets/icons/minus.svg" alt="" class="minus" />
-            </div>
-          </button>
-          <div class="panel">
-            <p>
-              В Fun Extreme мы живем и дышим эндуро. Мы предлагаем широкий выбор
-              лучших мотоциклов эндуро, тщательно обслуживаемых и готовых
-              к преодолению самых сложных трасс. Если вы опытный гонщик, ищущий
-              очередную порцию адреналина, или новичок, желающий познакомиться
-              с миром бездорожья, у нас найдется идеальный мотоцикл для вас.
-            </p>
-          </div>
-          <button class="accordion">
-            <span>Сколько времени занимает обучение и инструктаж?</span>
-
-            <div class="accordion__icon">
-              <img src="./assets/icons/plus.svg" alt="" class="plus" />
-              <img src="./assets/icons/minus.svg" alt="" class="minus" />
-            </div>
-          </button>
-          <div class="panel">
-            <p>
-              В Fun Extreme мы живем и дышим эндуро. Мы предлагаем широкий выбор
-              лучших мотоциклов эндуро, тщательно обслуживаемых и готовых
-              к преодолению самых сложных трасс. Если вы опытный гонщик, ищущий
-              очередную порцию адреналина, или новичок, желающий познакомиться
-              с миром бездорожья, у нас найдется идеальный мотоцикл для вас.
-            </p>
+          <div class="right__block">
+            <img src="./assets/images/map.png" alt="map" />
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- trening section => Записаться на тренировку -->
-    <section class="trening">
-      <div class="container trening__container">
-        <h2 class="section__title">
-          Записаться <br />
-          <span class="section__title__child__1">на тренировку</span>
-        </h2>
-
-        <p class="descr">Действует бонусная система!</p>
-
-        <div class="btns">
-          <button class="btn online">Записаться онлайн</button>
-          <button class="btn telegram">
-            Записаться
-            <img src="./assets/icons/telegram__icon.svg" alt="icon" />
-          </button>
-          <button class="btn telegram">
-            Записаться
-            <img src="./assets/icons/phone__icon.svg" alt="icon" />
-          </button>
+        <div class="container">
+          <footer class="footer">
+            <p>©Все права защищены, 2024</p>
+          </footer>
         </div>
-      </div>
-
-      <div class="container contact__container">
-        <div class="left__block">
-          <h3>Контакты</h3>
-          <a href="tel:+7 495 555 55 55">
-            <img src="./assets/icons/phone.svg" alt="icon" />
-            <u>+7 495 555 55 55</u>
-          </a>
-
-          <a href="#" class="location">
-            <img src="./assets/icons/location.svg" alt="icon" />
-            <span>
-              Мотопарк <br />
-              «Вельяминово». <br />Московская обл., г. Истра, д. Вельяминово.
-            </span>
-          </a>
-        </div>
-
-        <div class="right__block">
-          <img src="./assets/images/map.png" alt="map" />
-        </div>
-      </div>
-
-      <div class="container">
-        <footer class="footer">
-          <p>©Все права защищены, 2024</p>
-        </footer>
-      </div>
-    </section>
-
+      </section>
+    </div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 

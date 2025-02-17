@@ -23,6 +23,24 @@ window.addEventListener("DOMContentLoaded", () => {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+
+    breakpoints: {
+      1500: {
+        slidesPerView: 3,
+      },
+      850: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 1.5,
+      },
+      675: {
+        slidesPerView: 1.2,
+      },
+      300: {
+        slidesPerView: 1,
+      },
+    },
   });
 
   var acc = document.getElementsByClassName("accordion");
