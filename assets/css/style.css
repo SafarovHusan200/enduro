@@ -39,9 +39,9 @@ li {
 }
 
 .container {
-  max-width: 1680px;
+  max-width: 1700px;
   width: 100%;
-
+  padding: 0 10px;
   margin: 0 auto;
 
   display: flex;
@@ -163,6 +163,8 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 33.6px */
+
+  transition: 0.25s;
 }
 
 .hero .hero__actions .btns .btn:nth-child(2) {
@@ -1201,6 +1203,9 @@ li {
   position: absolute;
 }
 
+.funextreme__galery__box__1 {
+  z-index: 1;
+}
 .funextreme__galery__box__2 {
   left: 700px;
   z-index: 1;
@@ -1658,6 +1663,9 @@ li {
   align-items: flex-start;
 }
 
+.faq .section__title {
+  margin-bottom: 66px;
+}
 .faq .section__title .section__title__child__1 {
   padding-left: 141px;
 }
@@ -1891,6 +1899,16 @@ li {
   text-align: center;
 }
 
+.btns .btn:nth-of-type(1):hover {
+  background: #39ff14 !important;
+}
+.btns .btn:nth-of-type(2):hover {
+  background: #ffa500 !important;
+}
+.btns .btn:nth-of-type(3):hover {
+  background: #ffa500 !important;
+}
+
 /* Media query max-width: 1750 */
 @media screen and (max-width: 1750px) {
   .signUp {
@@ -2024,6 +2042,12 @@ li {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  .funextreme__galery__box__4 {
+    top: 137px;
+    left: auto;
+    right: -50px;
   }
 }
 
@@ -2228,6 +2252,38 @@ li {
   .trening .right__block {
     width: 100%;
   }
+
+  .funextreme__galery {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .funextreme__galery__box {
+    border-radius: 10px;
+    overflow: hidden;
+    position: static;
+    width: calc(50% - 10px);
+  }
+
+  .funextreme__galery__box__2 {
+    height: 370px;
+
+    z-index: 0;
+  }
+  .funextreme__galery__box img {
+    width: 100%;
+    height: 100%;
+    position: static;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .trening {
+    background-position: 0 40%;
+  }
 }
 
 /* max-width: 888px */
@@ -2241,10 +2297,10 @@ li {
   }
 
   .funextreme__galery__box__4 {
+    width: 100%;
     display: block;
     top: 0;
     left: 0;
-    padding: 20px;
 
     border-radius: 15px;
     overflow: hidden;
@@ -2263,7 +2319,7 @@ li {
   }
 
   .funextreme__galery {
-    height: 470px;
+    height: auto;
   }
 
   .banquet__container .block .box {
@@ -2571,7 +2627,7 @@ li {
   }
 
   .trening {
-    background-position: 0 40%;
+    background-position: 100px 33%;
     background-size: contain;
     padding-bottom: 57px;
   }
@@ -2594,7 +2650,8 @@ li {
   }
 
   .trening .trening__container {
-    padding: 93px 20px;
+    padding: 100px 20px;
+  }
 }
 
 /* max-width: 576px */
