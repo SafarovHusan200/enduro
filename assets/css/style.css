@@ -109,14 +109,14 @@ li {
   line-height: 120%; /* 184.8px */
 }
 
-.hero h2:nth-child(1) {
+.hero h2 span:nth-child(1) {
   margin-left: 0%;
 }
-.hero h2:nth-child(2) {
+.hero h2 span:nth-child(2) {
   padding-left: 20%;
 }
 
-.hero h2:nth-child(3) {
+.hero h2 span:nth-child(3) {
   padding-left: 10%;
   color: #0f2;
 }
@@ -391,18 +391,23 @@ li {
 }
 
 .offer .block {
-  width: calc(25% - 20px);
-
+  width: 100%;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  gap: 20px 0;
 
-  z-index: 1;
+  flex-wrap: wrap;
+
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+
+  gap: 20px;
 }
 
 .offer .block .box {
   display: flex;
   max-width: 404px;
+  width: 100%;
 
   height: 404px;
   padding: 30px 20px;
@@ -413,11 +418,7 @@ li {
   flex-shrink: 0;
 }
 
-.offer .block__1 {
-  position: relative;
-}
-
-.offer .block__1 .box {
+.offer .block .box:nth-child(1) {
   max-width: 825px;
   width: 205%;
   height: 404px;
@@ -426,47 +427,48 @@ li {
   flex-direction: column;
   justify-content: flex-end;
 
-  position: absolute;
-  bottom: 0;
-
   border-radius: 15px;
   background: url("../images/heto__bottom3.png") center / cover no-repeat;
-}
-.offer .block__1 .box p {
-  color: #fff;
 
-  /* p2 */
-  font-family: "Roboto", sans-serif;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%; /* 33.6px */
+  order: 4;
 }
 
-.offer .block__2 .box {
-  background-image: url(../images/offer__box1__bg.png);
+.offer .block .box:nth-child(2) {
+  background-image: url("../images/offer__box1__bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+
+  order: 2;
 }
 
-.offer .block__3 .box {
-  background-image: url(../images/offer__box2__bg.png);
+.offer .block .box:nth-child(3),
+.offer .block .box:nth-child(4) {
+  background-image: url("../images/offer__box2__bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+
+  order: 3;
 }
 
-.offer .block__4 {
-  justify-content: flex-end;
-}
-.offer .block__4 .box {
+.offer .block .box:nth-child(5) {
   max-width: 404px;
   height: 620px;
-  background-image: url(../images/offer__box4__bg.png);
+  background-image: url("../images/offer__box4__bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+  order: 6;
+
+  margin-top: -217px;
+}
+
+.offer .block .box:nth-child(4) {
+  order: 5;
+}
+.offer .block .box:nth-child(6) {
+  order: 1;
 }
 
 .offer .block .box h3 {
@@ -493,7 +495,7 @@ li {
   text-transform: uppercase;
 }
 
-.offer .block__1 .box p {
+.offer .block .box:nth-child(1) p {
   color: #fff;
 
   /* p2 */
@@ -765,7 +767,7 @@ li {
 .signUp .block .btns .btn {
   display: flex;
   /* height: 70px; */
-  padding: 16px 40px 20px 40px;
+  padding: 10px 40px 12px 40px;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -840,13 +842,10 @@ li {
 }
 
 .client .content .btn {
-  display: flex;
+  display: inline-block;
   /* width: 366.667px; */
   /* height: 70px; */
   padding: 16px 40px 20px 40px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
 
   background: #ffa500;
 
@@ -1091,20 +1090,29 @@ li {
 
 .funextreme .cards .card__1 {
   background-image: url("../images/funextrem__card__1.png");
+  order: 1;
 }
 .funextreme .cards .card__2 {
   background-image: url("../images/funextrem__card__2.png");
+  order: 2;
 }
 .funextreme .cards .card__3 {
   padding: 0;
+  order: 3;
 }
 
 .funextreme .cards .card__4 {
   padding: 0;
+  order: 4;
+}
+.funextreme .cards .card__5 {
+  background-image: url("../images/funextrem__card__2.png");
+  order: 5;
 }
 
 .funextreme .cards .card__6 {
   background-image: url("../images/funextrem__card__44.png");
+  order: 6;
 }
 
 .funextreme .cards .card img {
@@ -1502,7 +1510,8 @@ li {
 
 .contact .btns .btn {
   display: flex;
-  padding: 16px 60px 20px 60px;
+  height: 70px;
+  padding: 10px 40px 12px 40px;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -1816,7 +1825,8 @@ li {
 
 .trening .btns .btn {
   display: flex;
-  padding: 16px 60px 20px 60px;
+  height: 70px;
+  padding: 10px 40px 12px 40px;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -1889,6 +1899,17 @@ li {
   align-items: flex-start;
 }
 
+.contact__container .right__block {
+  max-width: 1113px;
+  width: 100%;
+  height: 475px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.contact__container .right__block iframe {
+  width: 100%;
+}
 /* Footer */
 .footer {
   width: 100%;
@@ -1945,35 +1966,45 @@ li {
     margin: 0;
   }
 
+  .offer {
+    padding-bottom: 60px;
+  }
   .offer .container {
     justify-content: space-between;
   }
 
   .offer .block {
-    width: calc(33% - 20px);
+    justify-content: center;
   }
 
-  .block__1 {
-    order: 4;
-    height: auto;
-  }
-  .block__2 {
-    order: 1;
-  }
-  .block__3 {
-    order: 2;
-  }
-  .block__4 {
-    order: 3;
-  }
-
-  .offer .block__1 .box {
+  .offer .block .box {
     max-width: 404px;
     width: 100%;
     height: 404px;
+
+    background-size: 100% 100% !important;
+  }
+  .offer .block .box:nth-child(1) {
+    max-width: 404px;
+    width: 100%;
+
+    order: 7;
   }
 
-  .offer .block__1 .box p {
+  .offer .block .box:nth-child(6) {
+    display: none;
+  }
+
+  .offer .block .box:nth-child(5) {
+    max-width: 404px;
+    height: 404px;
+
+    background-size: 100% 100%;
+    order: 6;
+    margin-top: 0px;
+  }
+
+  .offer .block .box:nth-child(1) p {
     font-size: 22px;
     line-height: 120%;
   }
@@ -2004,7 +2035,7 @@ li {
   }
 
   .funextreme .cards .card h4 {
-    font-size: 34px;
+    font-size: 30px;
   }
 
   .funextreme .corporate .box {
@@ -2044,6 +2075,7 @@ li {
 
   .trening .right__block {
     width: calc(100% - 400px);
+    height: 475px;
     border-radius: 10px;
     overflow: hidden;
   }
@@ -2096,7 +2128,7 @@ li {
   }
 
   .offer .block {
-    width: calc(50% - 20px);
+    /* width: calc(50% - 20px); */
   }
 
   .block__2,
@@ -2259,6 +2291,7 @@ li {
   .contact__container .left__block {
     width: 100%;
   }
+
   .trening .right__block {
     width: 100%;
   }
@@ -2293,6 +2326,14 @@ li {
 
   .trening {
     background-position: 0 40%;
+  }
+
+  .funextreme .cards .card__3 {
+    order: 7;
+  }
+
+  .funextreme .cards .card__4 {
+    order: 8;
   }
 }
 
@@ -2371,6 +2412,13 @@ li {
     font-size: 66px;
     font-weight: 900;
     line-height: normal;
+  }
+  .hero h2 span:nth-child(2) {
+    padding-left: 0;
+  }
+
+  .hero h2 span:nth-child(3) {
+    padding-left: 0px;
   }
 
   .hero .hero__actions .btns .btn {
@@ -2663,6 +2711,10 @@ li {
 
   .trening .trening__container {
     padding: 100px 20px;
+  }
+
+  .funextreme .cards .card__4 {
+    display: none;
   }
 }
 
